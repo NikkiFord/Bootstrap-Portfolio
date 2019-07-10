@@ -1,0 +1,62 @@
+header {
+    background-color:#fff;
+    border-bottom:5px #ccc solid;
+}
+
+nav a {
+    color: #777;
+    text-decoration:none;
+}
+
+nav li {
+    border-right: solid 1px #ddd;
+}
+
+nav li:last-of-type {
+  border-right: none;
+}
+
+#name {
+    color:#ffffff;
+    background-color:#4aaaa5;
+    padding: 15px 25px 15px 25px;
+    display: inline-block;
+}
+
+body {
+    background-color:#d3d3d3;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color:#777;
+    margin:0;
+    background-image: url("assets/images/gravel.png")
+}
+
+#body-content {
+    margin-top: 30px;
+    border-width:2px;
+    border-color:#dddddd;
+    background-color:#fff;
+    border-style:solid;
+    padding:20px;
+    box-sizing: border-box;
+}
+
+
+#content-title {
+    color:#4aaaa5;
+
+}
+
+hr {
+    border-color:#ddd;
+}
+
+footer {
+    color:#ddd;
+    font-size:10px;
+    padding-top:30px;
+    box-sizing:border-box;
+    background-color:#666666;
+    border-top: 5px #4aaaa5 solid;
+    height:50px;
+}
