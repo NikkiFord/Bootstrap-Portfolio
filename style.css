@@ -51,6 +51,17 @@ hr {
     border-color:#ddd;
 }
 
+.caption {
+        position: absolute;
+        background-color:#4aaaa5;
+        padding:15px;
+        bottom:10px;
+        width:100%;
+        box-sizing:border-box;
+        text-align: center;
+        color:#fff;
+}
+
 footer {
     color:#ddd;
     font-size:10px;
