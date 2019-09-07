@@ -71,3 +71,9 @@ footer {
     border-top: 5px #4aaaa5 solid;
     height:50px;
 }
+
+#contactBox {
+    border-radius: 5px;
+    background-color: #4AAAA5;
+    color: #fff;
+}
