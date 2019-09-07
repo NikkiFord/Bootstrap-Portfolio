@@ -7,30 +7,36 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="assets/stylesheets/style.css">
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
   <title>About Me</title>
 </head>
 
 <body>
+
   <header>
     <div class="container">
       <div class="row">
         <div class="col-sm-3 pl-0">
           <h3 id="name" class="m-0">Nikki Ford</h3>
         </div>
-        <div class="col-sm-3 offset-sm-6">
-          <nav class="navbar navbar-expand-lg">
-
+        <div class="col-sm-9 pr-0 d-flex flex-column-reverse">
+          <nav class="navbar navbar-expand-lg flex-row-reverse p-0">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">About</a>
+                <a id="aboutLink" class="nav-link" href="">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <a id="portfolioLink" class="nav-link" href="">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="https://github.com/NikkiFord">Github</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">LinkedIn</a>
               </li>
             </ul>
           </nav>
@@ -38,37 +44,73 @@
       </div>
     </div>
   </header>
+
   <div id="body-content" class="container mt-5">
     <div class="row">
       <div class="col-sm-12">
-        <h3 id="content-title">About Me</h3>
-        <hr>
-        <img src="assets/images/me.JPG" style= "width: 200px" class="img-fluid img-thumbnail float-left mr-3"  alt="Nikki Ford">
-        <p>My name is Nikki. I am 31 years old, I grew up in Orem, Utah, and currently live in Saratoga Springs, Utah. I
-          have
-          been married to my husband, Alex, for 8 years. We have 3 mini pigs; Lilly, Booker, and Piper that are our
-          babies.</p>
 
-        <p>I love educating people on mini pigs, especially because there is a lot of misinformation out there. I run a
-          website
-          called <a href="http://pigipedia.org/" target="_blank">www.pigipedia.org</a>, that is a wiki you can search
-          for
-          general information, as well as specific health conditions on mini pigs. I also run a Facebook page of the
-          same
-          name, where you can ask questions to knowleable admins as well as current mini pig owners.
-        </p>
-        <p>In my spare time, I love to play video games. My current obession is a game called <a
-            href="https://heroesofthestorm.com/en-us/" target="_blank">Heroes of the Storm</a>.
-        </p>
+        <div id="aboutContent" class="page-content">
+          <h3 class="content-title">About Me</h3>
+          <hr>
+          <div style="width: 200px" class="float-left mr-3">
+            <img src="assets/images/me.JPG" class="img-fluid img-thumbnail mb-2"  alt="Nikki Ford">
+            <p style="border: solid 1px #ddd; border-radius: 5px; background-color: #ddd;" class="p-3">
+              <span style="font-weight: bold;">Contact:</span><br>
+              <span>Nikki Ford</span><br>
+              <span>(801) 400-0739</span><br>
+              <span>NikkiGFord@gmail.com</span><br>
+            </p>
+          </div>
+          <p>
+            My name is Nikki. I am 31 years old and I grew up in Orem, Utah. I currently live in Saratoga Springs, Utah. My husband and I have been married for 8 years. We have 3 mini pigs: Lilly, Booker, and Piper. We spoil them like children!
+          </p>
+          <p>
+            I love educating people about mini pigs. There is a lot of misinformation out there and correcting it is a big undertaking. My husband and I created and maintain a website called <a href="http://pigipedia.org/" target="_blank">www.pigipedia.org</a>. It is a public wiki that anyone can use to find general information and health conditions for mini pigs. I also administrate a Facebook group by the same name. The site and the group allow anyone to ask questions and receive answers knowleable admins as well as current mini pig owners and experts.
+          </p>
+        </div>
+
+        <div id="portfolioContent" class="page-content">
+          <h3 id="content-title">Portfolio</h3>
+          <hr>
+          <!--decided to use flexbox for this page-->
+          <div class="d-flex justify-content-around flex-wrap">
+              <div class="position-relative mb-2">
+                  <a href="https://nikkiford.github.io/hangman/"><img src="assets/images/lorempixel4.jpg"
+                          style="width: 200px" class="img-fluid img-thumbnail" alt="Hangman">
+                      <div class="caption">Hangman</div>
+                  </a>
+              </div>
+              <div class="position-relative mb-2">
+                  <a href="https://nikkiford.github.io/cat-collector/">
+                      <img src="assets/images/lorempixel1.jpg" style="width: 200px"
+                          class="img-fluid img-thumbnail" alt="Cat Collector Game">
+                          <div class="caption">Cat Collector Game</div>
+                  </a>
+              </div>
+              <div class="position-relative mb-2">
+                  <a href="https://nikkiford.github.io/cat-trivia/"><img src="assets/images/lorempixel2.jpg"
+                          style="width: 200px" class="img-fluid img-thumbnail" alt="Cat Trivia Game">
+                      <div class="caption">Cat Trivia Game</div>
+                  </a>
+              </div>
+              <div class="position-relative mb-2">
+                  <a href="https://nikkiford.github.io/GifTastic/"><img src="assets/images/lorempixel3.jpg"
+                          style="width: 200px" class="img-fluid img-thumbnail" alt="GifTastic">
+                      <div class="caption">GifTastic</div>
+                  </a>
+              </div>
+          </div>
+        </div>
+
       </div>
     </div>
-
   </div>
+
   <footer class="fixed-bottom text-center">
     Copyright &copy;
   </footer>
 
-
+  <script type="text/javascript" src="assets/javascript/script.js"></script>
 </body>
 
 </html>

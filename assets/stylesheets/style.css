@@ -42,7 +42,7 @@ body {
 }
 
 
-#content-title {
+.content-title {
     color:#4aaaa5;
 
 }
@@ -52,14 +52,14 @@ hr {
 }
 
 .caption {
-        position: absolute;
-        background-color:#4aaaa5;
-        padding:15px;
-        bottom:10px;
-        width:100%;
-        box-sizing:border-box;
-        text-align: center;
-        color:#fff;
+    position: absolute;
+    background-color:#4aaaa5;
+    padding:15px;
+    bottom:10px;
+    width:100%;
+    box-sizing:border-box;
+    text-align: center;
+    color:#fff;
 }
 
 footer {
