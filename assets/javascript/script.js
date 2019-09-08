@@ -1,17 +1,26 @@
-$("#aboutLink").click((e) => {
+const $aboutLink = $("#aboutLink");
+const $portfolioLink = $("#portfolioLink");
+const $homeLink = $("#homeLink");
+
+const $aboutContent = $("#aboutContent");
+const $portfolioContent = $("#portfolioContent");
+
+$aboutLink.click((e) => {
   e.preventDefault();
   $(".page-content").hide();
-  $("#aboutContent").show();
+  $aboutContent.show();
   $(".active").removeClass("active");
-  $("#aboutLink").addClass("active");
+  $aboutLink.addClass("active");
 });
 
-$("#portfolioLink").click((e) => {
+$portfolioLink.click((e) => {
   e.preventDefault();
   $(".page-content").hide();
-  $("#portfolioContent").show();
+  $portfolioContent.show();
   $(".active").removeClass("active");
-  $("#portfolioLink").addClass("active");
+  $portfolioLink.addClass("active");
 });
 
-$("#aboutLink").click();
+$homeLink.click(() => $aboutLink.click());
+
+$aboutLink.click();
