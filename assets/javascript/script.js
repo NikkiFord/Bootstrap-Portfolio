@@ -1,26 +1,26 @@
-const $aboutLink = $("#aboutLink");
-const $portfolioLink = $("#portfolioLink");
-const $homeLink = $("#homeLink");
+let aboutLink = $("#aboutLink");
+let portfolioLink = $("#portfolioLink");
+let homeLink = $("#homeLink");
 
-const $aboutContent = $("#aboutContent");
-const $portfolioContent = $("#portfolioContent");
+let aboutContent = $("#aboutContent");
+let portfolioContent = $("#portfolioContent");
 
-$aboutLink.click((e) => {
+aboutLink.click((e) => {
   e.preventDefault();
   $(".page-content").hide();
   $aboutContent.show();
   $(".active").removeClass("active");
-  $aboutLink.addClass("active");
+  aboutLink.addClass("active");
 });
 
-$portfolioLink.click((e) => {
+portfolioLink.click((e) => {
   e.preventDefault();
   $(".page-content").hide();
-  $portfolioContent.show();
+  portfolioContent.show();
   $(".active").removeClass("active");
-  $portfolioLink.addClass("active");
+  portfolioLink.addClass("active");
 });
 
-$homeLink.click(() => $aboutLink.click());
+homeLink.click(() => aboutLink.click());
 
-$aboutLink.click();
+aboutLink.click();
