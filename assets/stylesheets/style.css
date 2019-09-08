@@ -54,33 +54,6 @@ body {
     margin-bottom: 1.5rem;
 }
 
-
-@media screen and (max-width: 992px) {
-    .content-title {
-        text-align: center;
-    }
-
-    .portfolio-item {
-
-    }
-}
-
-@media screen and (min-width: 993px) {
-    .left-column {
-        float: left;
-        margin-right: 1rem;
-        width: 250px;
-        text-align: left;
-    }
-}
-
-@media screen and (min-width: 700px) {
-    .portfolio-item img {
-        width: 250px;
-        height: 250px;
-    }
-}
-
 hr {
     border-color:#ddd;
 }
@@ -104,10 +77,41 @@ footer {
     background-color:#666666;
     border-top: 5px #4aaaa5 solid;
     height:50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 #contactBox {
     border-radius: 5px;
     background-color: #4AAAA5;
     color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+    .content-title {
+        text-align: center;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .left-column {
+        float: left;
+        margin-right: 1rem;
+        width: 250px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .portfolio-item img {
+        width: 250px;
+        height: 250px;
+    }
 }
