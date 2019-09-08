@@ -3,17 +3,10 @@ header {
     border-bottom:5px #ccc solid;
 }
 
-nav a {
-    color: #777;
-    text-decoration:none;
-}
-
-nav li {
-    border-right: solid 1px #ddd;
-}
-
-nav li:last-of-type {
-  border-right: none;
+.navbar-brand {
+    background-color: #4AAAA5;
+    padding: 10px;
+    color: #fff !important;
 }
 
 #name {
@@ -28,7 +21,7 @@ body {
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color:#777;
     margin:0;
-    background-image: url("assets/images/gravel.png")
+    background-image: url("../images/gravel.png")
 }
 
 #body-content {
@@ -44,7 +37,48 @@ body {
 
 .content-title {
     color:#4aaaa5;
+}
 
+.left-column {
+    text-align: center;
+}
+
+#portfolioContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+
+@media screen and (max-width: 992px) {
+    .content-title {
+        text-align: center;
+    }
+
+    .portfolio-item {
+
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .left-column {
+        float: left;
+        margin-right: 1rem;
+        width: 250px;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .portfolio-item img {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 hr {
