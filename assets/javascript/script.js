@@ -8,7 +8,7 @@ let portfolioContent = $("#portfolioContent");
 aboutLink.click((e) => {
   e.preventDefault();
   $(".page-content").hide();
-  $aboutContent.show();
+  aboutContent.show();
   $(".active").removeClass("active");
   aboutLink.addClass("active");
 });
